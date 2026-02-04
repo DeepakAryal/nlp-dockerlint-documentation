@@ -496,19 +496,3 @@ While the 1.15% macro F1 improvement might seem modest at first glance, the reco
 **Third, practical impact** — in production environments processing thousands of Dockerfiles, this translates to hundreds of additional misconfigurations detected annually, directly improving software quality and security.
 
 Most importantly, the scientific contribution is demonstrating that code-specific pre-training provides measurable advantages over general-purpose models. If we ignore these results and recommend the inferior model, we would be contradicting our own empirical evidence.
-
----
-
-## Quick Reference: Key Metrics
-
-| Metric | RoBERTa | CodeBERT |
-|--------|---------|----------|
-| Binary Classification Accuracy | 98% | 98% |
-| Binary F1-Score | 0.98 | 0.98 |
-| Binary AUC-ROC | 0.9968 | 0.9970 |
-| Multi-class Top-1 Accuracy | 70.48% | 70.70% |
-| Multi-class Top-3 Accuracy | 89.01% | 89.38% |
-| Macro-averaged F1 | 0.7055 | 0.7136 |
-
----
-
