@@ -74,6 +74,12 @@ These examples show the models identifying a misconfiguration and classifying it
 |:---:|:---:|
 | ![RoBERTa Wrong](./figures/roberta-wrong-inference.png) | ![CodeBERT Wrong](./figures/codebert-wrong-inference.png) |
 
+## 📝 Conclusions
+- For binary misconfiguration detection, both CodeBERT and RoBERTa achieve excellent and identical performance (≈98% accuracy), demonstrating strong and reliable classification capability.
+- In rule-specific misconfiguration classification, CodeBERT outperformed RoBERTa, demonstrating its stronger ability to capture Dockerfile-specific and semantic patterns.
+- Although RoBERTa has nearly three times more parameters, its general text pretraining limits its effectiveness for code analysis, while CodeBERT's code-centric training enables better rule-specific detection.
+- Both models are suitable for large-scale binary detection, but CodeBERT is the more effective choice for detailed rule-level analysis due to its code-aware training.
+
 ## 🔮 Future Recommendations
 - Improve rule-specific classification using larger and more diverse datasets, including data augmentation for rare rules
 - Explore ensemble models or hybrid approaches combining transformers with rule-based heuristics
@@ -97,6 +103,3 @@ These examples show the models identifying a misconfiguration and classifying it
 ### Proposal Documents
 - [Proposal Report (PDF)](./proposals/proposal-report-thesis-nlp-dockerlint-final.pdf)
 - [Proposal Presentation (PDF)](./proposals/proposal-presentation-thesis-nlp-dockerlint-final.pdf)
-
----
-*Developed as part of a Master's (Information Technology) Thesis research project at Tribhuvan University.*
